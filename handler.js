@@ -14,7 +14,6 @@ module.exports.api = async (event) => {
   const id = event.pathParameters.id
 
   switch (section) {
-    case "persons": return null;
     case "upload": return uploadImgRouter(JSON.parse(event.body))
     case "users": return userRouter({ method: method, body: JSON.parse(event.body) });
     case "person": return dynamoRouter({ method: method, body: JSON.parse(event.body), id: id })
