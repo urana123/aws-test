@@ -1,5 +1,3 @@
-org: urana
-app: test-aws
 service: serverless-test
 frameworkVersion: "3"
 useDotenv: true
