@@ -19,7 +19,7 @@ provider:
         - s3:*
         - dynamodb:*
       Resource:
-        { "Fn::Join": ["", ["arn:aws:s3:::serverless-test-urana", "/*"]] }
+        { "Fn::Join": ["", ["arn:aws:s3:::aws-back", "/*"]] }
     - Effect: Allow
       Action:
         - dynamodb:*
